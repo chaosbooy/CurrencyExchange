@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NBP.MAUI.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            
+            <Label
+                x:Name="w"
+                Text="Welcome to exchagne rate"
+                Style="{StaticResource Headline}"/>
+            
+
+            <HorizontalStackLayout>
+                
+                <Picker
+                    WidthRequest="100"
+                    x:Name="picker1"
+                    SelectedIndexChanged="PickerIndexChanged"/>
+
+                <Entry
+                    WidthRequest="200"
+                    x:Name="entry1" 
+                    Text=""
+                    TextChanged="InputChanged"
+                    Keyboard="Numeric"
+                    MaxLength="10"/>
+
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout>
+                <Picker
+                    WidthRequest="100"
+                     x:Name="picker2"
+                    SelectedIndexChanged="PickerIndexChanged"/> 
+
+                <Entry
+                    WidthRequest="200"
+                    x:Name="entry2" 
+                    Text=""
+                    TextChanged="InputChanged"
+                    Keyboard="Numeric"
+                    MaxLength="10"/>
+            </HorizontalStackLayout>
+            
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
