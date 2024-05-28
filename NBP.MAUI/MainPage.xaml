@@ -10,9 +10,12 @@
             
             <Label
                 x:Name="w"
-                Text="Welcome to exchagne rate"
+                Text="Welcome to exchange rate"
                 Style="{StaticResource Headline}"/>
-            
+
+            <Label 
+                x:Name="x" />
+
 
             <HorizontalStackLayout>
                 
@@ -29,6 +32,10 @@
                     Keyboard="Numeric"
                     MaxLength="10"/>
 
+                <Label
+                    Margin="20,0,0,0"
+                    x:Name="label1" />
+
             </HorizontalStackLayout>
 
             <HorizontalStackLayout>
@@ -44,9 +51,22 @@
                     TextChanged="InputChanged"
                     Keyboard="Numeric"
                     MaxLength="10"/>
+
+                <Label
+                    Margin="20,0,0,0"
+                    x:Name="label2" />
+
             </HorizontalStackLayout>
-            
-            
+
+            <HorizontalStackLayout BackgroundColor="DarkGray"
+                                   HeightRequest="300"
+                                   WidthRequest="500">
+                <GraphicsView x:Name="graph" 
+                              HeightRequest="300"
+                              WidthRequest="500"/>
+            </HorizontalStackLayout>
+
+
         </VerticalStackLayout>
     </ScrollView>
 
